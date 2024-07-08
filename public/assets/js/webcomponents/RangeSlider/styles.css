@@ -1,0 +1,70 @@
+@charset "utf-8";
+.slider {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 80px;
+  border: 4px solid darkcyan;
+  border-radius: 20px;
+  background: #fff;
+}
+
+.slider input[type="number"] {
+  width: 50px;
+  height: 30px;
+  background: #fff;
+  border: 1px solid #ddd;
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 5px;
+}
+
+/* blendet Pfeile im Input Feld aus */
+.slider input[type="number"]::-webkit-outer-spin-button,
+.slider input[type="number"]::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+.slider .range-slider {
+  position: relative;
+  width: 400px;
+  /* TODO */
+  height: 5px; 
+  background: #ddd;
+  outline: none;
+  top: 1.5px;
+  margin: 10px;
+}
+
+.slider .range-slider .progress{
+  position: absolute;
+  left: 25%;
+  right: 25%;
+  height: 100%;
+  background-color:darkcyan;
+  border-radius: 50px;
+}
+
+.slider .range-slider input[type="range"] {
+  position: absolute;
+  top: -7.5px;
+  left: -5px;
+  width: 101%;
+  appearance: none;
+  pointer-events: none;
+  background: none;
+  outline: none;
+}
+
+.slider .range-slider input::-webkit-slider-thumb {
+  pointer-events: auto;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: darkcyan;
+  border-radius: 15px;
+}
+
